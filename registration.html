@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0" />
+    <title>TechCon 2023</title>
+    <link rel="stylesheet" href="style.css" />
+    <!--fonts and icons-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!--sub-header-->
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="registration.html">REGISTRATION</a></li>
+            <li><a href="schedule.html">SCHEDULE</a></li>
+            <li><a href="speakers.html">SPEAKERS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+      </nav>
+      <h1>Registration</h1>
+    </section>
+
+    <!--Registration content-->
+
+    <section class="registration">
+      <h1>Register For Our Upcoming Event</h1>
+      <p></p>
+
+      <div class="row">
+        <div class="tickets-col">
+          <h3>Standard - Free</h3>
+          <p>Access to all Standard Events at Techcon</p>
+        </div>
+        <div class="tickets-col">
+          <h3>Premium - $15</h3>
+          <p>
+            Access to all Standard and Premium Events at Techcon<br />Access to
+            beta versions of upcoming devices and gadgets
+          </p>
+        </div>
+      </div>
+      <div class="email-box">
+        <h3>Register with Email</h3>
+        <form class="email-form">
+          <input type="text" placeholder="Enter Full Name" required />
+          <input type="email" placeholder="Enter Email" required />
+          <label for="ticket-type">Select Ticket Type</label>
+          <select name="ticket-type" id="ticket-type">
+            <option>Standard</option>
+            <option>VIP</option>
+          </select>
+          <button type="submit" class="button red-button">SUBMIT</button>
+        </form>
+      </div>
+    </section>
+
+    <!------Footer------>
+
+    <section class="footer">
+      <h2>About Us</h2>
+      <p>
+        TechCon is an annual global event where the most brilliant minds come
+        together for a spectacle of human innovation.<br />Visit our social
+        media pages to be kept updated on everything Techcon and more
+      </p>
+      <div class="icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-tiktok"></i>
+      </div>
+    </section>
+
+    <!--------JavaScript for Toggle Menu------->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

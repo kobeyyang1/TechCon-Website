@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0" />
+    <title>TechCon 2023</title>
+    <link rel="stylesheet" href="style.css" />
+    <!--fonts and icons-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!--sub-header-->
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="registration.html">REGISTRATION</a></li>
+            <li><a href="schedule.html">SCHEDULE</a></li>
+            <li><a href="speakers.html">SPEAKERS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+      </nav>
+      <h1>Schedule</h1>
+    </section>
+
+    <!--Schedule content-->
+
+    <section class="schedule">
+      <h1>TechCon 2023 Schedule</h1>
+      <p>The complete timetable of events at TechCon 2023</p>
+
+      <div class="row">
+        <div class="schedule-col">
+          <button type="button" class="btn" onclick="openPopup()">Day 1</button>
+          <div class="popup" id="popup">
+            <div class="modal-header">
+              <div class="title">Day 1</div>
+            </div>
+            <table border="1">
+              <tr>
+                <td>Event Title</td>
+                <td>Venue</td>
+                <td>Time</td>
+                <td>Date</td>
+                <td>Access</td>
+              </tr>
+              <tr>
+                <td>Opening Ceremony</td>
+                <td>Main Stage</td>
+                <td>10:00 - 14:00</td>
+                <td>December 15th, 2023</td>
+                <td>Standard</td>
+              </tr>
+              <tr>
+                <td>Exploration Convention</td>
+                <td>Alpha Hall</td>
+                <td>15:00 - 17:00</td>
+                <td>December 15th, 2023</td>
+                <td>Standard</td>
+              </tr>
+              <tr>
+                <td>Elon Musk Speech/Demonstration</td>
+                <td>Main Stage</td>
+                <td>18:00 - 20:00</td>
+                <td>December 15th, 2023</td>
+                <td>Standard</td>
+              </tr>
+              <tr>
+                <td>Exploration Early Access-Free Roam</td>
+                <td>Omega Hall</td>
+                <td>20:00 - 00:00</td>
+                <td>December 15th, 2023</td>
+                <td>VIP</td>
+              </tr>
+            </table>
+            <button type="button" onclick="closePopup()">Back</button>
+          </div>
+          <div id="overlay"></div>
+        </div>
+        <div class="schedule-col">
+          <button type="button" class="btn" onclick="openPopup2()">
+            Day 2
+          </button>
+          <div class="popup2" id="popup2">
+            <div class="modal-header">
+              <div class="title">Day 2</div>
+            </div>
+            <table border="1">
+              <tr>
+                <td>Event Title</td>
+                <td>Venue</td>
+                <td>Time</td>
+                <td>Date</td>
+                <td>Access</td>
+              </tr>
+              <tr>
+                <td>TechFair</td>
+                <td>Main Stage</td>
+                <td>10:00 - 14:00</td>
+                <td>December 16th, 2023</td>
+                <td>Standard</td>
+              </tr>
+              <tr>
+                <td>Gadgets Convention</td>
+                <td>Alpha Hall</td>
+                <td>15:00 - 17:00</td>
+                <td>JDecember 16th, 2023</td>
+                <td>Standard</td>
+              </tr>
+              <tr>
+                <td>Mark Zuckerberg Speech/Demonstration</td>
+                <td>Main Stage</td>
+                <td>18:00 - 20:00</td>
+                <td>December 16th, 2023</td>
+                <td>Standard</td>
+              </tr>
+              <tr>
+                <td>Gadgets Early Access-Free Roam</td>
+                <td>Omega Hall</td>
+                <td>20:00 - 00:00</td>
+                <td>December 16th, 2023</td>
+                <td>VIP</td>
+              </tr>
+            </table>
+            <button type="button" onclick="closePopup2()">Back</button>
+          </div>
+        </div>
+        <div class="schedule-col">
+          <button type="button" class="btn" onclick="openPopup3()">
+            Day 3
+          </button>
+          <div class="popup3" id="popup3">
+            <div class="modal-header">
+              <div class="title">Day 3</div>
+            </div>
+            <table border="1">
+              <tr>
+                <td>Event Title</td>
+                <td>Venue</td>
+                <td>Time</td>
+                <td>Date</td>
+                <td>Access</td>
+              </tr>
+              <tr>
+                <td>Software Free-Roam</td>
+                <td>Beta Hall</td>
+                <td>10:00 - 14:00</td>
+                <td>December 17th, 2023</td>
+                <td>Standard</td>
+              </tr>
+              <tr>
+                <td>Software Convention</td>
+                <td>Alpha Hall</td>
+                <td>15:00 - 17:00</td>
+                <td>December 17th, 2023</td>
+                <td>Standard</td>
+              </tr>
+              <tr>
+                <td>Kanye West Speech/Performance</td>
+                <td>Main Stage</td>
+                <td>18:00 - 20:00</td>
+                <td>December 17th, 2023</td>
+                <td>Standard</td>
+              </tr>
+              <tr>
+                <td>Software Early Access-Free Roam</td>
+                <td>Omega Hall</td>
+                <td>20:00 - 00:00</td>
+                <td>December 17th, 2023</td>
+                <td>VIP</td>
+              </tr>
+            </table>
+            <button type="button" onclick="closePopup3()">Back</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!------Footer------>
+
+    <section class="footer">
+      <h2>About Us</h2>
+      <p>
+        TechCon is an annual global event where the most brilliant minds come
+        together for a spectacle of human innovation.<br />Visit our social
+        media pages to be kept updated on everything Techcon and more
+      </p>
+      <div class="icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-tiktok"></i>
+      </div>
+    </section>
+
+    <!---JavaScript for Timetables--->
+    <script>
+      let popup = document.getElementById("popup");
+      let popup2 = document.getElementById("popup2");
+      let popup3 = document.getElementById("popup3");
+
+      function openPopup() {
+        popup.classList.add("open-popup");
+      }
+      function openPopup2() {
+        popup2.classList.add("open-popup");
+      }
+      function openPopup3() {
+        popup3.classList.add("open-popup");
+      }
+
+      function closePopup() {
+        popup.classList.remove("open-popup");
+      }
+      function closePopup2() {
+        popup2.classList.remove("open-popup");
+      }
+      function closePopup3() {
+        popup3.classList.remove("open-popup");
+      }
+    </script>
+
+    <!--------JavaScript for Toggle Menu------->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

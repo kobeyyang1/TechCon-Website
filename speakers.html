@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0" />
+    <title>TechCon 2023</title>
+    <link rel="stylesheet" href="style.css" />
+    <!--fonts and icons-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!--sub-header-->
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="registration.html">REGISTRATION</a></li>
+            <li><a href="schedule.html">SCHEDULE</a></li>
+            <li><a href="speakers.html">SPEAKERS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+      </nav>
+      <h1>Speakers</h1>
+    </section>
+
+    <!--Speakers page content-->
+
+    <section class="speakers">
+      <h1>TechCon 2023 Headline Speakers</h1>
+      <p>Click for Short Bio</p>
+
+      <div class="row">
+        <div class="speakers-col">
+          <button type="button" class="pics" onclick="openBio()">
+            <img src="images/elon.png" alt="Elon Musk" />
+          </button>
+          <div class="bio" id="bio">
+            <div class="modal-header">
+              <div class="title">Elon Musk</div>
+            </div>
+            <p>
+              Elon Musk is a South African visionary entrepreneur known for
+              revolutionizing industries. Co-founder of companies like PayPal,
+              Tesla, SpaceX, Neuralink, and The Boring Company, Musk is a
+              driving force in electric vehicles, space exploration, renewable
+              energy, and cutting-edge technology. His relentless pursuit of
+              innovation and ambitious goals, including colonizing Mars and
+              transitioning to sustainable energy, has made him a global icon of
+              entrepreneurship and futurism. He is currently the wealthiest man
+              in the world.
+            </p>
+            <button type="button" onclick="closeBio()">Back</button>
+          </div>
+          <h3>Elon Musk</h3>
+          <p>SpaceX - Tesla - X</p>
+        </div>
+        <div class="speakers-col">
+          <button type="button" class="pics" onclick="openBio2()">
+            <img src="images/kanye.png" alt="Kanye West" />
+          </button>
+          <div class="bio2" id="bio2">
+            <div class="modal-header">
+              <div class="title">Kanye West</div>
+            </div>
+            <p>
+              Also known as Ye, is a prolific and controversial musician,
+              producer, and fashion designer. Renowned for albums like "The
+              College Dropout," "Late Graduation," and "My Beautiful Dark
+              Twisted Fantasy," he reshaped hip-hop with innovative production
+              and introspective lyrics. Beyond music, Ye's Yeezy fashion line
+              revolutionized streetwear and luxury fashion, cementing his status
+              as a cultural icon despite controversies surrounding his outspoken
+              nature.
+            </p>
+            <button type="button" onclick="closeBio2()">Back</button>
+          </div>
+          <h3>Kanye West</h3>
+          <p>Graduation - MBDTF - Donda</p>
+        </div>
+        <div class="speakers-col">
+          <button type="button" class="pics" onclick="openBio3()">
+            <img src="images/zuck.png" />
+          </button>
+          <div class="bio3" id="bio3">
+            <div class="modal-header">
+              <div class="title">Mark Zuckerberg</div>
+            </div>
+            <p>
+              The co-founder of Facebook, the social media platform that
+              revolutionized global connectivity. His vision and leadership
+              expanded Facebook's reach, acquiring Instagram and WhatsApp,
+              forming Meta. Zuckerberg's initiatives in technology and
+              philanthropy cemented him as one of the most influential names in
+              the tech industry.
+            </p>
+            <button type="button" onclick="closeBio3()">Back</button>
+          </div>
+          <h3>Mark Zuckerberg</h3>
+          <p>Meta</p>
+        </div>
+      </div>
+    </section>
+
+    <!------Footer------>
+
+    <section class="footer">
+      <h2>About Us</h2>
+      <p>
+        TechCon is an annual global event where the most brilliant minds come
+        together for a spectacle of human innovation.<br />Visit our social
+        media pages to be kept updated on everything Techcon and more
+      </p>
+      <div class="icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-tiktok"></i>
+      </div>
+    </section>
+
+    <!---JavaScript for Bios--->
+    <script>
+      let bio = document.getElementById("bio");
+      let bio2 = document.getElementById("bio2");
+      let bio3 = document.getElementById("bio3");
+
+      function openBio() {
+        bio.classList.add("open-bio");
+      }
+      function openBio2() {
+        bio2.classList.add("open-bio2");
+      }
+      function openBio3() {
+        bio3.classList.add("open-bio3");
+      }
+
+      function closeBio() {
+        bio.classList.remove("open-bio");
+      }
+      function closeBio2() {
+        bio2.classList.remove("open-bio2");
+      }
+      function closeBio3() {
+        bio3.classList.remove("open-bio3");
+      }
+    </script>
+
+    <!--------JavaScript for Toggle Menu------->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

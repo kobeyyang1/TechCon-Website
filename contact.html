@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0" />
+    <title>TechCon 2023</title>
+    <link rel="stylesheet" href="style.css" />
+    <!--fonts and icons-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!--sub-header-->
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="registration.html">REGISTRATION</a></li>
+            <li><a href="schedule.html">SCHEDULE</a></li>
+            <li><a href="speakers.html">SPEAKERS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+      </nav>
+      <h1>Contact Us</h1>
+    </section>
+
+    <!--Contact content-->
+
+    <section class="location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20554.67693875634!2d-122.40501289188003!3d37.77051480739855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb68ad0cfc739%3A0x7eb356b66bd4b50e!2sSilicon%20Valley%2C%20CA%2C%20USA!5e0!3m2!1sen!2suk!4v1701095267627!5m2!1sen!2suk"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+    <section class="contact-us">
+      <div class="contact-col">
+        <div class="contact-info">
+          <i class="fas fa-home"></i>
+          <span>
+            <h5>Silicon Valley, San Francisco, United States</h5>
+          </span>
+        </div>
+        <div class="contact-info">
+          <i class="fas fa-phone"></i>
+          <span>
+            <h5>+00 0123456789</h5>
+          </span>
+        </div>
+        <div class="contact-info">
+          <i class="fas fa-envelope"></i>
+          <span>
+            <h5>info@techcon.com</h5>
+          </span>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+
+      <div class="contact-box">
+        <h3>Send Us a Message</h3>
+        <form class="contact-form">
+          <input type="text" placeholder="Enter Full Name" />
+          <input type="email" placeholder="Enter Email" />
+          <input type="text" placeholder="Type Your Message" />
+          <button type="submit" class="button red-button">SUBMIT</button>
+        </form>
+      </div>
+    </section>
+
+    <!------Footer------>
+
+    <section class="footer">
+      <h2>About Us</h2>
+      <p>
+        TechCon is an annual global event where the most brilliant minds come
+        together for a spectacle of human innovation.<br />Visit our social
+        media pages to be kept updated on everything Techcon and more
+      </p>
+      <div class="icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-tiktok"></i>
+      </div>
+    </section>
+
+    <!--------JavaScript for Toggle Menu------->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
